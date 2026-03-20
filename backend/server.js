@@ -68,7 +68,7 @@ app.use("/api", user(db2));
 app.use("/api", servicePayments(db2));
 
 app.use("/api", authMiddleware(db), logOut(db));
-// app.use('/api', authMiddleware(db), myprofile(db))
+app.use('/api', authMiddleware(db), myprofile(db))
 
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
