@@ -5,6 +5,7 @@ const util = require("util");
 const cors = require("cors");
 const jsonMiddleware = require("./middleware/jsonMiddleware");
 const authMiddleware = require("./middleware/authMiddleware");
+const rateLimitMiddleware = require("./middleware/rateLimitMiddleware");
 const sendOtp = require("./routes/sendOtp");
 const verifyOtp = require("./routes/verifyOtp");
 const register = require("./routes/register");
@@ -56,6 +57,7 @@ db2.query = util.promisify(db2.query);
 
 app.use(cors());
 app.use(jsonMiddleware);
+app.use(rateLimitMiddleware);
 
 // Debug middleware to log incoming requests
 app.use((req, res, next) => {
