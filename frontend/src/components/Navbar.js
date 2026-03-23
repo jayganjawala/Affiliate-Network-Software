@@ -201,8 +201,10 @@ function Navbar() {
                               Profile
                             </Link>
                           </li>
-
-                          <li className="border-top">
+                          <li>
+                            <hr className="dropdown-divider" />
+                          </li>
+                          <li>
                             <Link
                               className="dropdown-item"
                               to="/mydeployments"
@@ -212,8 +214,10 @@ function Navbar() {
                               My Deployment
                             </Link>
                           </li>
-
-                          <li className="border-top">
+                          <li>
+                            <hr className="dropdown-divider" />
+                          </li>
+                          <li>
                             <button
                               className="dropdown-item text-danger"
                               onClick={() => setShowLogoutModal(true)}
