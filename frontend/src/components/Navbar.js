@@ -203,6 +203,17 @@ function Navbar() {
                           </li>
 
                           <li className="border-top">
+                            <Link
+                              className="dropdown-item"
+                              to="/mydeployments"
+                              onClick={closeMenu}
+                            >
+                              <i className="fa-solid fa-server me-1"></i>
+                              My Deployment
+                            </Link>
+                          </li>
+
+                          <li className="border-top">
                             <button
                               className="dropdown-item text-danger"
                               onClick={() => setShowLogoutModal(true)}

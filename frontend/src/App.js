@@ -16,6 +16,7 @@ import Confirmation from "./pages/Confirmation";
 
 import Toast from "./components/Toast";
 import MyProfile from "./pages/MyProfile";
+import MyDeployments from "./pages/MyDeployments";
 
 import AffiliateServices from "./pages/services/AffiliateServices";
 import EcommerceServices from "./pages/services/EcommerceServices";
@@ -51,6 +52,7 @@ function App() {
             <Route path="/startfree" element={<StartFree />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/myprofile" element={<MyProfile />} />
+            <Route path="/mydeployments" element={<MyDeployments />} />
             <Route path="/service/affiliate" element={<AffiliateServices />} />
             <Route path="/service/ecommerce" element={<EcommerceServices />} />
             <Route path="/service/fintech" element={<FintechServices />} />
@@ -58,7 +60,10 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/service-checkout" element={<ServiceCheckout />} />
           <Route path="/confirmation" element={<Confirmation />} />
-          <Route path="/service-confirmation" element={<ServiceConfirmation />} />
+          <Route
+            path="/service-confirmation"
+            element={<ServiceConfirmation />}
+          />
           {/* 404 */}
           <Route path="*" element={<div>404 - Page not found</div>} />
         </Routes>
