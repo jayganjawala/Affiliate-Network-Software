@@ -69,40 +69,41 @@ function MyDeployments() {
         {deployment ? (
           <div className="p-4 rounded bg-body border-start border-5 border-primary border-opacity-50">
             <div className="row g-3">
-              <div className="col-md-6">
+              <div className="col-md-3 col-6">
                 <small className="text-muted">Plan Name</small>
                 <h6 className="fw-semibold">{deployment.name}</h6>
               </div>
 
-              <div className="col-md-6">
+              {/* <div className="col-md-6 col-6">
                 <small className="text-muted">Status</small>
                 <h6 className="fw-semibold text-success">{deployment.status}</h6>
-              </div>
+              </div> */}
 
-              <div className="col-md-6">
+              <div className="col-md-3 col-6">
                 <small className="text-muted">Start Date</small>
                 <h6 className="fw-semibold">
                   {deployment.startDate
-                    ? dayjs(deployment.startDate).format("DD MMM YYYY, hh:mm A")
+                    ? dayjs(deployment.startDate).format("DD MMM YYYY")
                     : "-"}
                 </h6>
               </div>
 
-              <div className="col-md-6">
+              <div className="col-md-3 col-6">
                 <small className="text-muted">End Date</small>
                 <h6 className="fw-semibold">
                   {deployment.endDate
-                    ? dayjs(deployment.endDate).format("DD MMM YYYY, hh:mm A")
+                    ? dayjs(deployment.endDate).format("DD MMM YYYY")
                     : "-"}
                 </h6>
               </div>
 
-              <div className="col-md-12">
+              <div className="col-md-3 col-6">
                 <small className="text-muted">Days Left</small>
                 <h5 className="fw-semibold text-primary">
                   {getDaysLeft(deployment.endDate)} days
                 </h5>
               </div>
+
             </div>
           </div>
         ) : (

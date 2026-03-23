@@ -398,9 +398,9 @@ function LandingPage() {
                 <div className="flex-column">
                   <h6 className="mt-2">Choose Your Platform</h6>
                   <p className="mt-2 mb-0 small text-muted">
-                    Choose from Cloud SaaS for flexible access, Local Platform
-                    for on-premise control, or an additional Hybrid Platform for
-                    multi-site management.
+                    Choose Cloud SaaS for flexible access, Local Platform for
+                    on-premise control, or Hybrid Platform for multi-site
+                    management.
                   </p>
                 </div>
               </div>
@@ -411,9 +411,8 @@ function LandingPage() {
                 <div className="flex-column">
                   <h6 className="mt-2">Get Expert Deployment Support</h6>
                   <p className="mt-2 mb-0 small text-muted">
-                    Receive professional guidance to select, install, and
-                    optimize your Cloud SaaS, Local Platform or Hybrid Platform
-                    deployment.
+                    Get expert guidance to select, install, and optimize your
+                    Cloud, Local, or Hybrid platform.
                   </p>
                 </div>
               </div>
@@ -424,9 +423,8 @@ function LandingPage() {
                 <div className="flex-column">
                   <h6 className="mt-2">Monitor Your Deployment Live</h6>
                   <p className="mt-2 mb-0 small text-muted">
-                    Track the setup and performance of your Cloud SaaS, Local
-                    Platform or Hybrid Platform in real time, ensuring
-                    everything runs smoothly.
+                    Monitor your Cloud, Local, or Hybrid platform setup and
+                    performance in real time for smooth operation.
                   </p>
                 </div>
               </div>
@@ -437,9 +435,8 @@ function LandingPage() {
                 <div className="flex-column">
                   <h6 className="mt-2">Deploy with Confidence</h6>
                   <p className="mt-2 mb-0 small text-muted">
-                    Execute your Cloud SaaS, Local Platform or Hybrid Platform
-                    deployment smoothly, following best practices for optimal
-                    results.
+                    Deploy your Cloud, Local, or Hybrid platform smoothly using
+                    best practices for optimal results.
                   </p>
                 </div>
               </div>
