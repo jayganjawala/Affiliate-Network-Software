@@ -67,7 +67,7 @@ function MyDeployments() {
         </div>
 
         {deployment ? (
-          <div className="p-4 rounded bg-body border-start border-5 border-primary border-opacity-50">
+          <div className="p-3 rounded bg-body border-start border-5 border-primary border-opacity-50">
             <div className="row g-3">
               <div className="col-md-3 col-6">
                 <small className="text-muted">Plan Name</small>
