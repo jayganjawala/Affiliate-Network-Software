@@ -1,5 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const twilio = require("twilio");
+require("dotenv").config();
+
+const client = twilio(
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN,
+);
 
 const generateOtp = () => {
   return Math.floor(100000 + Math.random() * 900000).toString();
@@ -54,12 +61,19 @@ module.exports = (db) => {
 
         // // Insert new user
         // await db.query(
-        //   `INSERT INTO softwareuser 
+        //   `INSERT INTO softwareuser
         //   (prefix, fullName, email, phone, otp, createdAt, updatedAt)
         //   VALUES (?, ?, ?, ?, ?, NOW(), NOW())`,
         //   [prefix, fullName, email, phone, otp],
         // );
       }
+
+      // Send OTP via Twilio
+      await client.messages.create({
+        body: `Your OTP is ${otp}`,
+        from: process.env.TWILIO_PHONE_NUMBER,
+        to: `+91${phone}`, // India format
+      });
 
       console.log(`OTP for ${phone}: ${otp}`);
 
